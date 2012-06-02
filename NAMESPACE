@@ -1,0 +1,3 @@
+useDynLib(jmec)
+import(nlme, survival)
+export(jmec.fitter, jmec.tempdatfun, jmec, nr.it, summary.jmec)

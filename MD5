@@ -1,0 +1,16 @@
+7b78a0ead3afaaa01575550266cb0dc6 *DESCRIPTION
+b0f480571945467472533ad2ceb25f46 *NAMESPACE
+73cd31306f702a03b417beefde1caacc *R/jmec.R
+70308365fbd24e610009da830368a891 *R/jmec.fitter.R
+656afae453fe5e4f05c6448acfe10db6 *R/jmec.tempdatfun.R
+5f85fed07ff5fbc6dca649c30b0b3ad2 *R/nr.it.R
+8b34a61a4ef682f485cdeb2aca0cccd1 *R/summary.jmec.R
+add31ef68c2bebcc2a6bd02fab6af54d *data/ecdat.rda
+6bd648e92833efc89ed242e61c6809b1 *jmec-Ex.R
+597af0f43c3113a6e4e867fd0b4cd4ab *man/ecdat.Rd
+c930a26f254bd9432a32bce27c82e867 *man/jmec.Rd
+17175050134b86b8967e3c8e85b709fc *man/jmec.fitter.Rd
+a6752385f1d8ee4a6649275431201a42 *man/jmec.tempdatfun.Rd
+208b3116ff1a8826d9cf43e5c3c6886f *man/nr.it.Rd
+d34f42f0d41342cd5edb73ab598ad1d7 *man/summary.jmec.Rd
+8b97aec35070e91c0a2ba498791088d5 *src/jmec.cpp
