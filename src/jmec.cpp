@@ -33,7 +33,6 @@ extern "C" void cdest(
 		)
 {
 	int i, j;
-	double const pi=4*atan(1);
 	/* compute crossproduct linear predictor and betas for event */
 		for(j = 1; j <= nobsT[0]; j++)
 		{
@@ -60,7 +59,7 @@ extern "C" void cdest(
 						pow(lambda0Cv[i]*exp(cpC[i] + alphaest[0]*bval[j]), censv[i])*
 						exp(-1*lambda0Cvcum[i]*exp(cpC[i] + alphaest[0]*bval[j]));
 			};
-			fb[j] = (1/sqrt(2*pi*thetaest[0]))*exp(-1*pow(bval[j],2)/(2*thetaest[0]))*l[0];
+			fb[j] = (1/sqrt(2*M_PI*thetaest[0]))*exp(-1*pow(bval[j],2)/(2*thetaest[0]))*l[0];
 			for(i = 1; i < nobsT[0]; i++)
 			{
 				fb[j] = fb[j]*l[i];
@@ -102,7 +101,6 @@ extern "C" void mh(
 		)
 {
 	int i, j;
-	double const pi=4*atan(1);
 	/* compute crossproduct linear predictor and betas for event */
 		for(j = 1; j <= nobsT[0]; j++)
 		{
@@ -128,7 +126,7 @@ extern "C" void mh(
 					pow(lambda0Cv[i]*exp(cpC[i] + alphaest[0]*bv[0]), censv[i])*
 					exp(-1*lambda0Cvcum[i]*exp(cpC[i] + alphaest[0]*bv[0]));
 		};
-		densv[0] = (1/sqrt(2*pi*thetaest[0]))*exp(-1*pow(bv[0],2)/(2*thetaest[0]))*l[0];
+		densv[0] = (1/sqrt(2*M_PI*thetaest[0]))*exp(-1*pow(bv[0],2)/(2*thetaest[0]))*l[0];
 		for(i = 1; i < nobsT[0]; i++)
 		{
 			densv[0] = densv[0]*l[i];
@@ -144,7 +142,7 @@ extern "C" void mh(
 						pow(lambda0Cv[i]*exp(cpC[i] + alphaest[0]*bcanv[j]), censv[i])*
 						exp(-1*lambda0Cvcum[i]*exp(cpC[i] + alphaest[0]*bcanv[j]));
 			};
-			denscanv[j] = (1/sqrt(2*pi*thetaest[0]))*exp(-1*pow(bcanv[j],2)/(2*thetaest[0]))*l[0];
+			denscanv[j] = (1/sqrt(2*M_PI*thetaest[0]))*exp(-1*pow(bcanv[j],2)/(2*thetaest[0]))*l[0];
 			for(i = 1; i < nobsT[0]; i++)
 			{
 				denscanv[j] = denscanv[j]*l[i];
